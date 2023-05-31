@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "4b29d69f-a29e-46c5-9826-ba66d4544dc9",
+		"name": "Contact API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7586700"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/contacts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/contacts/49124684-f49f-4d4c-a109-19c0281c1ffa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						"49124684-f49f-4d4c-a109-19c0281c1ffa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostOne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/contacts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOne",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/contacts/e31a4ba5-d728-4869-b0d3-bc8645ab78a6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						"e31a4ba5-d728-4869-b0d3-bc8645ab78a6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOne",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Hildegart\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/contacts/49124684-f49f-4d4c-a109-19c0281c1ffa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						"49124684-f49f-4d4c-a109-19c0281c1ffa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
