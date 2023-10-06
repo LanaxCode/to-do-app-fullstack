@@ -34,7 +34,6 @@ function App() {
       .then(data => setToDo((prev) => [...prev, data])).catch(error => console.error({ error }));
   };
 
-
   const deleteToDo = (id) => {
     console.log(prevToDo => prevToDo.filter(item => item.id !== id))
     console.log(id)
@@ -47,12 +46,9 @@ function App() {
 
           item.id !== id
         ));
-
-
       })
       .catch(error => console.error(error));
   };
-
 
   return (
     <section className="App">
